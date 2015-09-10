@@ -1,0 +1,63 @@
+<div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            {% if ext_logo_path.length %}
+                <div class="site-a-logo"><img src="{{ ext_logo_path }}" /></div>
+            {% /if %}
+                <h1>{{ siteName }}</h1>
+                <div class="site-des">{{ siteDes }}</div>
+                <div class="social">
+{% if ext_facebook_url.length %}<a class="facebook" href="{{ ext_facebook_url }}" title="Facebook">Facebook</a>{% /if %}
+{% if ext_google_url.length %}<a class="google" href="{{ ext_google_url }}" rel="author" title="Google+">Google+</a>{% /if %}
+{% if ext_stackoverflow_url.length %}<a class="stackoverflow" href="{{ ext_stackoverflow_url }}" title="StackOverflow"></a>{% /if %}
+{% if ext_linkedin_url.length %}<a class="linkedin" href="{{ ext_linkedin_url }}" title="LinkedIn">LinkedIn</a>{% /if %}
+{% if ext_pinterest_url.length %}<a class="pinterest" href="{{ ext_pinterest_url }}" title="Pinterest">Pinterest</a>{% /if %}
+{% if ext_quora_url.length %}<a class="quora" href="{{ ext_quora_url }}" title="Quora">Quora</a>{% /if %}
+{% if ext_instagram_url.length %}<a class="instagram" href="{{ ext_instagram_url }}" title="Instagram">Instagram</a>{% /if %}
+{% if ext_weibo_url.length %}<a class="weibo" target="_blank" href="{{ ext_weibo_url }}" title="weibo">Weibo</a>{% /if %}
+{% if ext_twitter_url.length %}<a class="twitter" target="_blank" href="{{ ext_twitter_url }}" title="Twitter">Twitter</a>{% /if %}
+{% if ext_github_url.length %}<a class="github" target="_blank" href="{{ ext_github_url }}" title="GitHub">GitHub</a>{% /if %}
+{% if ext_email.length %}<a class="email" href="mailto:{{ ext_email }}" title="Email">Email</a>{% /if %}
+  <a class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        {% for p in categoriesTree %}
+            <a href="{{ p.url }}"><strong>{{ p.name }}</strong></a>
+        {% /for %} 
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      {% for p in recentPosts %}
+		      {% if currentLoop.currentIndex < 5 %}
+			      <li class="post">
+			        <a href="{{ p.url }}">{{ p.title }}</a>
+			      </li>
+		     {% /if %}
+		  {% /for %} 
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
