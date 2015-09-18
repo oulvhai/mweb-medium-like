@@ -707,6 +707,13 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 #main-content .home-categories h1,#main-content .home-categories h2,#main-content .home-categories h3,#main-content .home-categories h4,#main-content .home-categories h5,#main-content .home-categories h6{
   margin: 0; padding: 0px; padding-bottom: 16px;
 }
+#main-content .home-categories .a-content-text h1,#main-content .home-categories .a-content-text h2,
+#main-content .home-categories .a-content-text h3,#main-content .home-categories .a-content-text h4,
+#main-content .home-categories .a-content-text h5,#main-content .home-categories .a-content-text h6{
+  margin-top: 1rem;
+}
+
+
 #main-content .markdown-body h1{font-size: 28px;border-bottom: none; }
 #main-content .markdown-body h2{font-size: 24px;border-bottom: none;}
 #main-content .markdown-body h3{font-size: 22px;}
@@ -717,7 +724,7 @@ font-family: "PT Sans", "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haa
 #main-content .markdown-body .article{ padding: 38px 0px; border-bottom: solid 1px #e6e6e6;}
 #main-content .markdown-body .article:first-child{padding-top: 20px;}
 #main-content .markdown-body .a-content{padding-bottom: 20px; padding-left: 2px; line-height: 1.6rem;}
-#main-content .markdown-body .a-content-text p{margin-bottom: 0;}
+
 #main-content .markdown-body .article .read-more{padding-left: 2px; color: #bababa; font-size: 14px;font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
 }
 #main-content .markdown-body .article .read-more a{color: #57ad68; }
