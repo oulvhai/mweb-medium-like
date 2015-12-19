@@ -20,7 +20,13 @@
   <script src="asset/highlightjs/highlight.pack.js"></script>
   <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script>hljs.initHighlightingOnLoad();</script>
-
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:{{ siteDomain }} ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
   </head>
   <body class="antialiased hide-extras">
     
@@ -42,9 +48,9 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" action="http://google.com/search" method="get">
-    <input type="hidden" name="q" value="site:{{ siteDomain }}" />
-    <input tabindex="1" type="search" name="q"  placeholder="Search"/>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
 </li>
           </ul>
@@ -80,3 +86,6 @@
 
 
         <section id="main-content" role="main" class="scroll-container">
+        
+       
+
