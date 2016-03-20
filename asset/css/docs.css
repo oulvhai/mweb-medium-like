@@ -14,7 +14,7 @@
 
 .top-bar-section ul li{ background: transparent;}
 .top-bar-section li:not(.has-form){   display: inline-block;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 .top-bar-section li{ }
 #sidebar{ margin-top: 0px;}
@@ -26,7 +26,7 @@
     font-size: 12px;
     text-transform: uppercase;
 
-   margin:0;
+   margin:0; 
   font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
   letter-spacing: .1rem;
   padding: 28px 0 0px 0;
@@ -37,20 +37,20 @@
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
   background: transparent;
-  color: #333;
+  color: #333; 
   font-weight: normal;
-
+  
 }
 .top-bar-section li.is_active:not(.has-form) a:not(.button) {
     background: transparent;
     font-weight: 700;
-    color: #333;
+    color: #333; 
     border-bottom: 2px rgba(0,0,0,0.8) solid;
 }
 .top-bar-section li.is_active:not(.has-form) a:not(.button):hover {
     background: transparent;
     font-weight: 700;
-    color: #333;
+    color: #333; 
     border-bottom: 2px rgba(0,0,0,0.8) solid;
 }
 #main-menu{ padding-left: 0.93rem; padding-right: 0.93rem;}
@@ -124,7 +124,7 @@ padding: 8px 0px; margin: 0;
 
 #site-categories .posts-list{ list-style: none; padding: 0; margin: 0; }
 #site-categories .posts-list li{
-
+    
     margin: 0; padding: 12px 0;
     display: block;
     border-bottom: 1px solid #eee; font-size: 12px;
@@ -136,7 +136,7 @@ padding: 8px 0px; margin: 0;
 #site-categories .posts-list li:first-child{padding-top: 0px;}
 #site-categories .posts-list li:last-child{ border-bottom: none;}
 #site-categories .posts-list li a{    color: #666;
-    text-decoration: none;  white-space: nowrap;
+    text-decoration: none;  white-space: nowrap; 
     cursor: pointer;
   }
 #site-categories .posts-list li a:hover{text-decoration: underline;}
