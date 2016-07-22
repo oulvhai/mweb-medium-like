@@ -41,9 +41,9 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">Archives</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        {% for m in siteMenu %}
+        <li id="{{ m.className }}"><a target="{{ m.target }}" href="{{ m.url }}">{{ m.name }}</a></li>
+        {% /for %}
         </ul>
 
         <ul class="right" id="search-wrap">
@@ -68,10 +68,9 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        {% for m in siteMenu %}
+        <li><a target="{{ m.target }}" href="{{ m.url }}">{{ m.name }}</a></li>
+        {% /for %}
 
     <li><label>Categories</label></li>
 
