@@ -76,11 +76,5 @@
       "variableName":"disqus_shortname",
       "inputFieldHeight":22,
       "exampleText":"disqus shortname"
-   },
-   {
-      "title":"duoshuo ",
-      "variableName":"duoshuo_shortname",
-      "inputFieldHeight":22,
-      "exampleText":"duoshuo shortname"
    }
 ]
