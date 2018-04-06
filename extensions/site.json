@@ -76,5 +76,11 @@
       "variableName":"disqus_shortname",
       "inputFieldHeight":22,
       "exampleText":"disqus shortname"
+   },
+   {
+    "title": "google analytics",
+    "variableName": "ga_code",
+    "inputFieldHeight": 100,
+    "exampleText": "Google Analytics tracking code"
    }
 ]
