@@ -1,5 +1,11 @@
 [
    {
+      "title":"favicon path",
+      "variableName":"favicon_path",
+      "inputFieldHeight":22,
+      "exampleText":"your site favicon"
+   },
+   {
       "title":"logo path",
       "variableName":"logo_path",
       "inputFieldHeight":22,
