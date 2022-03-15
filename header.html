@@ -21,6 +21,9 @@
     <script src="asset/js/vendor/modernizr.js"></script>
     <script src="asset/js/vendor/jquery.js"></script>
   <script src="asset/highlightjs/highlight.pack.js"></script>
+  {% if ext_favicon_path.length %}
+   <link rel="shortcut icon" href="{{ ext_favicon_path }}">
+  {% /if %}
   <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
